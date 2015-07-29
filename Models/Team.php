@@ -10,16 +10,18 @@
  *
  * @author sivakumar
  */
+include_once '/www/htdocs/service/SoccerTeamDemo/SocketTeam/Models/Identifyble.php';
 class Team extends Identifyble
 {
 
     private $name;
     private $logoUri;
 
-    function __construct($name, $logoUri)
+    function __construct($name, $logoUri,$id)
     {
         $this->name = $name;
         $this->logoUri = $logoUri;
+        $this->setIdentifier($id);
     }
 
     public function getName()

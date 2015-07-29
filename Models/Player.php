@@ -10,6 +10,9 @@
  *
  * @author sivakumar
  */
+
+
+include_once '/www/htdocs/service/SoccerTeamDemo/SocketTeam/Models/Identifyble.php';
 class Player extends Identifyble
 {
 
@@ -28,12 +31,13 @@ class Player extends Identifyble
         $this->team = $team;
     }
 
-    function __construct($firstName, $lastName, $imageUri, $team)
+    function __construct($firstName, $lastName, $imageUri, $team,$id)
     {
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->imageUri = $imageUri;
         $this->team = $team;
+        $this->setIdentifier($id);
     }
 
     public function getFirstName()

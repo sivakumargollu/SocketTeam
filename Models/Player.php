@@ -1,15 +1,5 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of Player
- *
- * @author sivakumar
- */
 
 
 include_once '/www/htdocs/service/SoccerTeamDemo/SocketTeam/Models/Identifyble.php';
